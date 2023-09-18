@@ -13,7 +13,7 @@ body {
  .container {
     height: 550vh;
     /* width: 98.9vw; */
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
 
@@ -109,13 +109,16 @@ body {
     height: 40%;
 }
 #lang {
+    content: "";
+    background-color: #000;
+    opacity: 0.5;
     height: 100%;
     width: 50%;
     font-size: 15px;
     border-radius: 4px;
     color: white;
     /* margin: 0 5px; */
-    background: transparent;
+    /* background: transparent; */
 }
 #signin {
     background-color: red;
@@ -141,7 +144,7 @@ body {
     /* border: 2px solid green; */
 }
 .des {
-    padding: 16% 0px;
+    padding: 14% 0px;
 }
 .sub-box2 {
     background: url();
@@ -149,7 +152,7 @@ body {
 .faq {
     margin: 0 auto;
     padding: 2rem 4rem;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .accordion .accordion-item {
     border: 1px solid #e5e5e5;
@@ -198,31 +201,36 @@ body {
     will-change: opacity, max-height;
   }
   .accordion .accordion-content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
     /* font-size: 1.3em; */
     padding: .5em 0 .5em 1.3em;
   }
-.vid1 {
-    height: 439px;
-    width: 435px;
-    /* position: relative; */
-    /* left: 80px;
-    bottom: 5px; */
+.vid {
+    height: 54%;
+    width: 72%;
+    position: relative;
+    z-index: -1;
+    bottom: 80%;
+    left: 12.5%;
 }
-.vid2 {
-    height: 439px;
-    width: 380px;
-    /* position: relative; */
-    /* left: 100px;
-    bottom: 85px; */
+#vid2 {
+    width: 60%;
+    height: 50%;
+    position: relative;
+    bottom: 92%;
+    left: 18%;
+
 }
 .img {
-    /* position: absolute; */
-    /* z-index: 1; */
     height: 445px;
     width: 600px;
 }
+.sub-img {
+    height: 100%;
+    width: 98%;
+}
+
 .fea {
     font-size: 23px;
 }
@@ -262,7 +270,7 @@ button {
     height: 100px;
     width: 100%;
     list-style: none;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin: 5px 0;
 }
 
@@ -312,3 +320,8 @@ button {
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+  hr {
+    background-color: rgb(146, 146, 146);
+    height: 10px;
+  }
