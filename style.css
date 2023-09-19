@@ -12,8 +12,6 @@ body {
 
  .container {
     height: 550vh;
-    /* width: 98.9vw; */
-    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
 
@@ -47,12 +45,13 @@ body {
     height: 100%;
     z-index: 1;
 } */
-#box2 {
-    height: 13%;
-}
 .feature {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+#box2 {
+    height: 13%;
 }
 #box3 {
     height: 13%;
@@ -75,9 +74,7 @@ body {
     /* flex-wrap: wrap; */
     justify-content: space-evenly;
 }
-#box7 p {
-    /* display: block !important; */
-}
+
 .inner-box {
     height: 99%;
     width: 404px;
@@ -146,9 +143,9 @@ body {
     margin: 8px 10px;
 }
 .sub-box {
-    height: 98%;
-    width: 50%;
-    /* border: 2px solid green; */
+    height: 400px;
+    width: 550px;
+    border: 2px solid green;
 }
 .des {
     padding: 14% 0px;
@@ -245,8 +242,8 @@ body {
 
 }
 .img {
-    height: 445px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
 }
 .sub-img {
     height: 100%;
@@ -256,26 +253,31 @@ body {
 .fea {
     font-size: 23px;
 }
-
+.con {
+    padding: 5px 0;
+}
 #email {
     background-color: black;
     opacity: 0.8;
-    height: 66px;
-    width: 400px;
+    height: 4rem;
+    width: 25rem;
     border: 1px solid white;
     padding-left: 30px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
 }
 
 #getstart {
     background-color: red;
     color: white;
-    font-size: 25px;
+    font-size: 1.6em;
     font-weight: bold;
-    height: 66px;
-    width: 200px;
+    height: 4rem;
+    width: 13rem;
+    position: relative;
+    top: 4px;
+    /* border: 1px solid red; */
     border: none;
     border-radius: 5px;
 }
@@ -355,4 +357,9 @@ button {
   .inner-box a:hover {
     text-decoration: underline;
     color: #ffff;
+  }
+  @media (max-width: 1400px) {
+    #box1 {
+        height: 19%;
+    }
   }
