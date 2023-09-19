@@ -18,9 +18,7 @@ body {
 }
 
 .box {
-    width: 100%;
-    padding: 10px 150px;
-    /* border: 2px solid red; */
+    padding: 10px 10%;
 }
 
 #box1 {
@@ -28,6 +26,7 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    /* border: 2px solid red; */
 }
 #box1::before {
     content: "";
@@ -77,11 +76,11 @@ body {
     width: 404px;
     line-height: 2.5rem;
     font-size: 1rem;
-    /* border: 2px solid green; */
+    border: 2px solid green;
 }
 .pro {
     position: relative;
-    /* border: 2px solid green; */
+    border: 2px solid green;
 }
 #pro1 {
     height: 90px;
@@ -99,7 +98,7 @@ body {
 .sub {
     height: 50%;
     margin: auto 0;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
 #sub1 {
     width: 14%;
@@ -414,6 +413,9 @@ button {
     #vid2 {
         max-width: 60%;
     }
+    #sub1 {
+        width: 15%;
+    }
   }
   
   /* lg */
@@ -450,7 +452,7 @@ button {
         font-size: 2.1rem;
     }
     .fea {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
     .inner-box {
         font-size: 0.8rem;
@@ -470,6 +472,9 @@ button {
     }
     .des {
         padding: 6% 0;
+    }
+    #sub1 {
+        width: 17%;
     }
   }
   
@@ -501,16 +506,20 @@ button {
         font-size: 0.7rem;
     }
     #lang {
+        width: 40%;
         font-size: 0.7rem;
     }
     .small-heading {
         font-size: 1.9rem;
     }
     .fea {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     .inner-box {
         font-size: 0.6rem;
+    }
+    #sub1 {
+        width: 19%;
     }
   }
   
@@ -523,7 +532,7 @@ button {
         width: 34%;
     }
     #main-heading {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     .faq h2 {
         font-size: 1.5rem;
@@ -548,10 +557,13 @@ button {
         font-size: 1.7rem;
     }
     .fea {
-        font-size: 0.7rem;
+        font-size: 1.15rem;
     }
     .inner-box {
         font-size: 0.5rem;
+    }
+    #sub1 {
+        width: 20%;
     }
   }
   
@@ -561,37 +573,43 @@ button {
       width: 100%;
     }
     #sub2 {
-        width: 36%;
+        width: 55%;
     }
     #main-heading {
-        font-size: 0.3rem;
+        font-size: 1.2rem;
     }
     .faq h2 {
         font-size: 1rem;
     }
     #email {
-        height: 1.5rem;
-        width: 5rem;
-        font-size: 0.3rem;
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 0.8rem;
     }
     #getstart {
-        height: 1.5rem;
-        width: 3rem;
-        font-size: 0.6em;
+        height: 2.5rem;
+        width: 6rem;
+        font-size: 0.9em;
     }
     #signin {
-        font-size: 0.5rem;
+        width: 45%;
+        font-size: 0.8rem;
     }
     #lang {
+        width: 25%;
         font-size: 0.5rem;
     }
     .small-heading {
         font-size: 1.5rem;
     }
     .fea {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
     }
     .inner-box {
         font-size: 0.3rem;
+    }
+    #sub1 {
+        width: 35%;
+        height: 40%;
     }
   }
