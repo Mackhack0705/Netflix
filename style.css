@@ -10,7 +10,7 @@ body {
     color: #fff;
 }
 
- .container {
+ .contain {
     height: 550vh;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ body {
 }
 
 #box1 {
-    height: 19%;
+    height: 18%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -40,15 +40,12 @@ body {
     left: 0px;
     opacity: 0.4;
 }
-/* #box1 img {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-} */
 .feature {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    text-align: center;
 }
 #box2 {
     height: 13%;
@@ -63,10 +60,10 @@ body {
     height: 13%;
 }
 #box6 {
-    height: 21%;
+    height: 22%;
     display: grid;
     grid-template-rows: 3fr;
-    padding: 10px 150px;
+    padding: 10px auto;
 }
 #box7 {
     height: 8%;
@@ -79,6 +76,7 @@ body {
     height: 99%;
     width: 404px;
     line-height: 2.5rem;
+    font-size: 1rem;
     /* border: 2px solid green; */
 }
 .pro {
@@ -93,21 +91,21 @@ body {
     
 }
 #pro2 {
-    height: 250px;
+    height: 260px;
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 .sub {
-    height: 55%;
+    height: 50%;
     margin: auto 0;
     /* border: 2px solid blue; */
 }
 #sub1 {
-    width: 15%;
+    width: 14%;
 }
 #sub2 {
-    width: 20%;
+    width: 24%;
     height: 40%;
 }
 #lang {
@@ -116,7 +114,7 @@ body {
     background-size: cover;
     height: 100%;
     width: 50%;
-    font-size: 15px;
+    font-size: 1rem;
     border-radius: 4px;
     color: #fff;
     opacity: 0.6;
@@ -128,8 +126,8 @@ body {
     background-color: red;
     color: white;
     border-radius: 4px;
-    font-size: 15px;
-    margin-left: 36px;
+    font-size: 1rem;
+    margin-left: 12%;
     /* margin: 0 5px; */
     border: none;
     width: 33%;
@@ -137,7 +135,7 @@ body {
 }
 #main-heading {
     font-weight: 900;
-    font-size: 45px;
+    font-size: 2.8rem;
 }
 .info {
     margin: 8px 10px;
@@ -145,7 +143,7 @@ body {
 .sub-box {
     height: 400px;
     width: 550px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .des {
     padding: 14% 0px;
@@ -227,18 +225,18 @@ body {
   }
 .vid {
     height: 54%;
-    width: 72%;
+    width: 100% !important;
     position: relative;
     z-index: -1;
     bottom: 80%;
-    left: 12.5%;
+    left: -0.5%;
 }
 #vid2 {
     width: 60%;
-    height: 50%;
+    height: 48%;
     position: relative;
     bottom: 92%;
-    left: 18%;
+    left: -0.5%;
 
 }
 .img {
@@ -251,7 +249,7 @@ body {
 }
 
 .fea {
-    font-size: 23px;
+    font-size: 1.5rem;
 }
 .con {
     padding: 5px 0;
@@ -288,7 +286,7 @@ button {
 .small-heading {
     color: #fff;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .li-item {
     height: 100px;
@@ -358,8 +356,242 @@ button {
     text-decoration: underline;
     color: #ffff;
   }
-  @media (max-width: 1400px) {
+
+  .container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  /* 2xl */
+  @media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+    #sub2 {
+        width: 26%;
+    }
+    #main-heading {
+        font-size: 2.3rem;
+    }
+    .faq h2 {
+        font-size: 3rem;
+    }
+    #email {
+        height: 3.5rem;
+        width: 21rem;
+        font-size: 0.9rem;
+    }
+    #getstart {
+        height: 3.5rem;
+        width: 11rem;
+        font-size: 1.4em;
+    }
+    #signin {
+        font-size: 0.9rem;
+    }
+    #lang {
+        font-size: 0.9rem;
+    }
+    .small-heading {
+        font-size: 2.3rem;
+    }
+    .fea {
+        font-size: 1.3rem;
+    }
+    .inner-box {
+        font-size: 0.9rem;
+    }
+    #vid2 {
+        max-width: 60%;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+    #sub2 {
+        width: 30%;
+    }
+    #main-heading {
+        font-size: 1.8rem;
+    }
+    .faq h2 {
+        font-size: 2.5rem;
+    }
+    #email {
+        height: 2.8rem;
+        width: 15rem;
+        font-size: 0.8rem;
+    }
+    #getstart {
+        height: 2.8rem;
+        width: 8rem;
+        font-size: 1.2em;
+    }
+    #signin {
+        font-size: 0.8rem;
+    }
+    #lang {
+        font-size: 0.8rem;
+    }
+    .small-heading {
+        font-size: 2.1rem;
+    }
+    .fea {
+        font-size: 1.1rem;
+    }
+    .inner-box {
+        font-size: 0.8rem;
+    }
     #box1 {
-        height: 19%;
+        height: 15%;
+    }
+    #box2,#box3,#box4,#box5 {
+        height: 15%;
+    }
+    .feature {
+        flex-wrap: wrap;
+    }
+    .sub-box {
+        height: 230px;
+        width: 300px;
+    }
+    .des {
+        padding: 6% 0;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+    #sub2 {
+        width: 32%;
+    }
+    #main-heading {
+        font-size: 1.3rem;
+    }
+    .faq h2 {
+        font-size: 2rem;
+    }
+    #email {
+        height: 2.5rem;
+        width: 11rem;
+        font-size: 0.6rem;
+    }
+    #getstart {
+        height: 2.5rem;
+        width: 7rem;
+        font-size: 1em;
+    }
+    #signin {
+        font-size: 0.7rem;
+    }
+    #lang {
+        font-size: 0.7rem;
+    }
+    .small-heading {
+        font-size: 1.9rem;
+    }
+    .fea {
+        font-size: 0.9rem;
+    }
+    .inner-box {
+        font-size: 0.6rem;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+    #sub2 {
+        width: 34%;
+    }
+    #main-heading {
+        font-size: 0.8rem;
+    }
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+    #email {
+        height: 2rem;
+        width: 8rem;
+        font-size: 0.5rem;
+    }
+    #getstart {
+        height: 2rem;
+        width: 5rem;
+        font-size: 0.7em;
+    }
+    #signin {
+        font-size: 0.6rem;
+    }
+    #lang {
+        font-size: 0.6rem;
+    }
+    .small-heading {
+        font-size: 1.7rem;
+    }
+    .fea {
+        font-size: 0.7rem;
+    }
+    .inner-box {
+        font-size: 0.5rem;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+    #sub2 {
+        width: 36%;
+    }
+    #main-heading {
+        font-size: 0.3rem;
+    }
+    .faq h2 {
+        font-size: 1rem;
+    }
+    #email {
+        height: 1.5rem;
+        width: 5rem;
+        font-size: 0.3rem;
+    }
+    #getstart {
+        height: 1.5rem;
+        width: 3rem;
+        font-size: 0.6em;
+    }
+    #signin {
+        font-size: 0.5rem;
+    }
+    #lang {
+        font-size: 0.5rem;
+    }
+    .small-heading {
+        font-size: 1.5rem;
+    }
+    .fea {
+        font-size: 0.5rem;
+    }
+    .inner-box {
+        font-size: 0.3rem;
     }
   }
