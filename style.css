@@ -1,44 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #000000;
+    --primary-btn-color: #e50914;
+    --secondary-btn-color: #c11119;
+    --padding-inline-section: 0.5rem;
 }
 
 body {
+    font-family: 'Poppins',sans-serif;
     background-color: #000;
-    color: #fff;
+    color: var(--primary-text-color);
 }
 
- .contain {
-    height: 550vh;
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+hr {
+  background-color: #232323;
+  border: none;
+  height: 10px;
+}
+
+/* utility classes */
+
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+
+.flex {
     display: flex;
-    flex-direction: column;
-
+    align-items: center;
 }
 
+.primary-button {
+    background-color: var(--primary-btn-color);
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    padding: 10px 22px;
+    box-shadow: 0 0 2px var(--primary-text-color);
+    transition: 0.2s ease-in;
+}
+
+.primary-button:hover {
+    background-color: var(--secondary-btn-color);
+}
+
+.secondary-button {
+    content: "";
+    background-color: var(--secondary-text-color);
+    border-radius: 4px;
+    border: 0.2px solid var(--primary-text-color);
+    padding: 10px 22px;
+    color: var(--primary-text-color);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.big-feature-section {
+    
+}
+
+/* header section */
 .box {
     padding: 10px 10%;
 }
 
-#box1 {
-    height: 18%;
+.header {
+    /* height: 18%; */
+    padding: 15px 30px;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    /* border: 2px solid red; */
-}
-#box1::before {
-    content: "";
     background: url('https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg');
     background-size: cover;
+    /* border: 2px solid red; */
+}
+/* .header::before {
+    content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     opacity: 0.4;
+} */
+
+.main-nav {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
 }
+
+.company-logo img{
+    width: 160px;
+    /* height: 200px; */
+}
+.btn {
+    flex-basis: 300px;
+}
+.header-section {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 2%;
+}
+
+.inner-header {
+    text-align: center;
+    padding: 40px 8px 10px;
+}
+
+.header-up {
+}
+
+.header-down {
+    margin-top: 10px;
+}
+
+.get-started-btn {
+    width: 15%;
+    height: 4rem;
+    font-size: 1.4rem;
+}
+
+/* Big-feature-section */
+
+.big-feature-section {
+    border: 2px solid red;
+}
+
+.feature-section {
+    justify-content: center;
+}
+
+.feature-left {
+    border: 2px solid red;
+}
+.feature-right {
+    border: 2px solid red;
+}
+/* Older code */
 .feature {
     display: flex;
     justify-content: center;
@@ -78,67 +215,21 @@ body {
     font-size: 1rem;
     border: 2px solid green;
 }
-.pro {
-    position: relative;
-    border: 2px solid green;
-}
-#pro1 {
-    height: 90px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
-}
-#pro2 {
+/* #pro2 {
     height: 260px;
     width: 80%;
     margin: 0 auto;
     text-align: center;
-}
-.sub {
-    height: 50%;
-    margin: auto 0;
-    border: 2px solid blue;
-}
-#sub1 {
-    width: 14%;
-}
-#sub2 {
-    width: 24%;
-    height: 40%;
-}
-#lang {
-    content: "";
-    background-color: #000;
-    background-size: cover;
-    height: 100%;
-    width: 50%;
-    font-size: 1rem;
-    border-radius: 4px;
-    color: #fff;
-    opacity: 0.6;
-    /* margin: 0 5px; */
-    /* background: transparent; */
-}
+} */
 
-#signin {
-    background-color: red;
-    color: white;
-    border-radius: 4px;
-    font-size: 1rem;
-    margin-left: 12%;
-    /* margin: 0 5px; */
-    border: none;
-    width: 33%;
-    height: 30px;
-}
-#main-heading {
+
+
+
+
+/* #main-heading {
     font-weight: 900;
     font-size: 2.8rem;
-}
-.info {
-    margin: 8px 10px;
-}
+} */
 .sub-box {
     height: 400px;
     width: 550px;
@@ -265,7 +356,7 @@ body {
     color: #fff;
 }
 
-#getstart {
+/* #getstart {
     background-color: red;
     color: white;
     font-size: 1.6em;
@@ -274,10 +365,10 @@ body {
     width: 13rem;
     position: relative;
     top: 4px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     border: none;
     border-radius: 5px;
-}
+} */
 
 button {
     cursor: pointer;
@@ -342,10 +433,6 @@ button {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
-  hr {
-    background-color: rgb(146, 146, 146);
-    height: 10px;
-  }
   .inner-box a {
     text-decoration: none;
     color: #ffff;
@@ -356,13 +443,6 @@ button {
     color: #ffff;
   }
 
-  .container {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
   
   /* 2xl */
   @media (max-width: 1536px) {
