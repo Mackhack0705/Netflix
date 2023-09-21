@@ -57,6 +57,10 @@ hr {
   height: 10px;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
 /* utility classes */
 
 .container {
@@ -97,6 +101,8 @@ hr {
 .big-feature-section {
     
 }
+
+
 
 /* header section */
 .box {
@@ -161,91 +167,40 @@ hr {
 
 /* Big-feature-section */
 
-.big-feature-section {
-    border: 2px solid red;
-}
 
 .feature-section {
     justify-content: center;
+    padding-block: 10px;
 }
 
 .feature-left {
-    border: 2px solid red;
+    width: 550px;
+    height: 400px;
 }
 .feature-right {
-    border: 2px solid red;
+    width: 550px;
+    height: 400px;
+}
+
+.feature-heading {
+    margin-block:25%;
+    padding-inline: 10%;
+}
+
+.feature-img {
+    width: 100%;
+    height: 100%;
+}
+.feature-img img {
+    width: 98%;
 }
 /* Older code */
-.feature {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    text-align: center;
-}
-#box2 {
-    height: 13%;
-}
-#box3 {
-    height: 13%;
-}
-#box4 {
-    height: 13%;
-}
-#box5 {
-    height: 13%;
-}
-#box6 {
-    height: 22%;
-    display: grid;
-    grid-template-rows: 3fr;
-    padding: 10px auto;
-}
-#box7 {
-    height: 8%;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-evenly;
-}
-
-.inner-box {
-    height: 99%;
-    width: 404px;
-    line-height: 2.5rem;
-    font-size: 1rem;
-    border: 2px solid green;
-}
-/* #pro2 {
-    height: 260px;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-} */
 
 
-
-
-
-/* #main-heading {
-    font-weight: 900;
-    font-size: 2.8rem;
-} */
-.sub-box {
-    height: 400px;
-    width: 550px;
-    /* border: 2px solid green; */
-}
-.des {
-    padding: 14% 0px;
-}
-.sub-box2 {
-    background: url();
-}
 .faq {
     text-align: center;
     margin: 0 auto;
     padding: 2rem 4rem;
-    /* border: 2px solid green; */
 }
 .faq h2 {
     font-size: 3.5rem;
@@ -274,7 +229,7 @@ hr {
 }
 .accordion button .accordion-title {
     padding: 1em 1.5em 1em 1.15em;
-  }
+}
 .accordion button .icon {
     display: inline-block;
     position: absolute;
@@ -309,12 +264,19 @@ hr {
     font-weight: 300;
     /* font-size: 1.3em; */
     padding: .5em 0 .5em 1.3em;
-  }
-  .accordion {
+}
+.accordion {
     margin-bottom: 3%;
-  }
+}
+.inner-box {
+    height: 99%;
+    width: 404px;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    border: 2px solid green;
+}
 .vid {
-    height: 54%;
+    height: 56%;
     width: 100% !important;
     position: relative;
     z-index: -1;
@@ -327,15 +289,7 @@ hr {
     position: relative;
     bottom: 92%;
     left: -0.5%;
-
-}
-.img {
-    height: 100%;
-    width: 100%;
-}
-.sub-img {
-    height: 100%;
-    width: 98%;
+    
 }
 
 .fea {
@@ -356,33 +310,15 @@ hr {
     color: #fff;
 }
 
-/* #getstart {
-    background-color: red;
-    color: white;
-    font-size: 1.6em;
-    font-weight: bold;
-    height: 4rem;
-    width: 13rem;
-    position: relative;
-    top: 4px;
-    border: 1px solid red;
-    border: none;
-    border-radius: 5px;
-} */
 
 button {
     cursor: pointer;
 }
-.small-heading {
-    color: #fff;
-    font-weight: 900;
-    font-size: 2.5rem;
-}
+
 .li-item {
     height: 100px;
     width: 100%;
     list-style: none;
-    /* border: 2px solid yellow; */
     margin: 5px 0;
 }
 
@@ -456,9 +392,6 @@ button {
     .container {
       max-width: 1024px;
     }
-    #sub2 {
-        width: 26%;
-    }
     #main-heading {
         font-size: 2.3rem;
     }
@@ -470,19 +403,11 @@ button {
         width: 21rem;
         font-size: 0.9rem;
     }
-    #getstart {
-        height: 3.5rem;
-        width: 11rem;
-        font-size: 1.4em;
-    }
     #signin {
         font-size: 0.9rem;
     }
     #lang {
         font-size: 0.9rem;
-    }
-    .small-heading {
-        font-size: 2.3rem;
     }
     .fea {
         font-size: 1.3rem;
@@ -495,6 +420,9 @@ button {
     }
     #sub1 {
         width: 15%;
+    }
+    #vid2 {
+        left: 18%;
     }
   }
   
@@ -543,8 +471,11 @@ button {
     #box2,#box3,#box4,#box5 {
         height: 15%;
     }
-    .feature {
+    .feature-section {
         flex-wrap: wrap;
+    }
+    .feature-section-img {
+        flex-direction: column-reverse;
     }
     .sub-box {
         height: 230px;
@@ -555,6 +486,9 @@ button {
     }
     #sub1 {
         width: 17%;
+    }
+    #vid2 {
+        left: 18%;
     }
   }
   
