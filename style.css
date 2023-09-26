@@ -136,6 +136,7 @@ img {
 }
 .btn {
     flex-basis: 300px;
+    text-align: end;
 }
 .header-section {
     height: 90%;
@@ -159,6 +160,17 @@ img {
     position: relative;
     top: 2px;
 }
+#email {
+    background-color: black;
+    opacity: 0.8;
+    height: 4rem;
+    width: 25rem;
+    border: 1px solid white;
+    padding-left: 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+}
 
 /* Big-feature-section */
 
@@ -166,6 +178,7 @@ img {
 .feature-section {
     justify-content: center;
     padding-block: 10px;
+    flex-direction: row;
 }
 
 .feature-left {
@@ -190,6 +203,22 @@ img {
     width: 98%;
 }
 
+.vid {
+    height: 100%;
+    width: 72% !important;
+    position: relative;
+    z-index: -1;
+    bottom: 100%;
+    left: 13%;
+}
+#vid2 {
+    width: 62% !important;
+    height: 58%;
+    position: relative;
+    bottom: 97%;
+    left: 18%;
+    
+}
 .faq {
     text-align: center;
     padding-block: 2rem;
@@ -235,7 +264,7 @@ img {
 }
 .accordion button[aria-expanded=true] + .accordion-content {
     opacity: 1;
-    max-height: 15em;
+    max-height: 30em;
     padding-block: 1%;
     transition: all 200ms linear;
     will-change: opacity, max-height;
@@ -271,35 +300,8 @@ img {
     line-height: 2.5rem;
     font-size: 1rem;
 }
-.vid {
-    height: 56%;
-    width: 100% !important;
-    position: relative;
-    z-index: -1;
-    bottom: 80%;
-    left: -0.5%;
-}
-#vid2 {
-    width: 62% !important;
-    height: 48%;
-    position: relative;
-    bottom: 92%;
-    left: 18%;
-    
-}
 .con {
     padding-block: 5px;
-}
-#email {
-    background-color: black;
-    opacity: 0.8;
-    height: 4rem;
-    width: 25rem;
-    border: 1px solid white;
-    padding-left: 30px;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #fff;
 }
 .inner-box a {
   text-decoration: none;
@@ -336,16 +338,86 @@ img {
   .container {
     max-width: 1024px;
   }
-  .company-logo img {
-    width: 158px;
-  }
-  
+  h1 {
+      font-size: 2.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    /* p {
+        font-size: 1.15rem;
+    } */
+    button {
+        font-size: 0.95rem;
+    }
+    .company-logo img {
+      width: 158px;
+    }
+    .get-started-btn {
+        font-size: 1.32rem;
+    }
+    .faq h2 {
+        font-size: 3.3rem;
+    }
+    .accordion button {
+        font-size: 1.4rem;
+    }
+    .accordion button .icon {
+        font-size: 38px;
+    }
+    .accordion .accordion-content p {
+        font-size: 1.2em;
+    }
 }
 
 /* lg */
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+      font-size: 1.2rem;
+  }
+  p {
+      font-size: 1.15rem;
+  }
+  /* button {
+      font-size: 0.90rem;
+  } */
+  .company-logo img {
+    width: 155px;
+  }
+  .primary-button {
+    padding: 8px 18px;
+  }
+  .secondary-button {
+    padding: 8px 18px;
+  }
+  .get-started-btn {
+    height: 3.8rem;
+    width: 20%;
+    top: 1.5px;
+    font-size: 1.1rem;
+  }
+  #email {
+    height: 3.8rem;
+    width: 22rem;
+    font-size: 0.95rem;
+  }
+  .faq h2 {
+      font-size: 3rem;
+  }
+  .accordion button {
+      font-size: 1.3rem;
+  }
+  .accordion button .icon {
+      font-size: 36px;
+  }
+  .accordion .accordion-content p {
+    font-size: 1.1em;
   }
 }
 
@@ -354,6 +426,65 @@ img {
   .container {
     max-width: 640px;
   }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+      font-size: 1.1rem;
+  }
+  p {
+      font-size: 1rem;
+  }
+  /* button {
+      font-size: 0.95rem;
+  } */
+  .company-logo img {
+    width: 140px;
+  }
+  .primary-button {
+    padding: 8px 18px;
+  }
+  .secondary-button {
+    padding: 8px 18px;
+  }
+  .get-started-btn {
+    height: 3.6rem;
+    width: 23%;
+    top: 1.5px;
+    font-size: 1.05rem;
+  }
+  #email {
+    height: 3.6rem;
+    width: 18rem;
+    font-size: 0.95rem;
+  }
+  .feature-section {
+    flex-wrap: wrap;
+  }
+  .feature-left {
+    height: 400px;
+  }
+  .feature-right {
+    height: 400px;
+  }
+  .feature-heading {
+    text-align: center;
+  }
+  .faq h2 {
+      font-size: 2.8rem;
+  }
+  .accordion button {
+      font-size: 1.15rem;
+  }
+  .accordion button .icon {
+      font-size: 32px;
+  }
+  .inner-box {
+    font-size: 0.9rem;
+  }
 }
 
 /* sm */
@@ -361,11 +492,126 @@ img {
   .container {
     max-width: 475px;
   }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+      font-size: 1rem;
+  }
+  p {
+      font-size: 0.9rem;
+  }
+  /* button {
+      font-size: 0.95rem;
+  } */
+  .company-logo img {
+    width: 125px;
+  }
+  .get-started-btn {
+    height: 3.2rem;
+    width: 30%;
+    top: 1.3px;
+    font-size: 0.99rem;
+  }
+  #email {
+    height: 3.2rem;
+    width: 15rem;
+    font-size: 0.85rem;
+  }
+  .feature-section {
+    flex-wrap: wrap;
+  }
+  .feature-left {
+    height: 350px;
+  }
+  .feature-right {
+    height: 350px;
+  }
+  .feature-heading {
+    text-align: center;
+  }
+  .faq h2 {
+      font-size: 2.3rem;
+  }
+  .accordion button {
+      font-size: 1.1rem;
+  }
+  .accordion button .icon {
+      font-size: 28px;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
   .container {
     width: 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h3 {
+      font-size: 0.9rem;
+  }
+  p {
+      font-size: 0.8rem;
+  }
+  /* button {
+      font-size: 0.95rem;
+  } */
+  .secondary-button {
+    width: 2rem;
+  }
+  .company-logo img {
+    width: 100px;
+  }
+
+  .con {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .get-started-btn {
+    height: 3.2rem;
+    width: 45%;
+    margin-top: 15px;
+    top: 1.3px;
+    font-size: 0.99rem;
+  }
+  #email {
+    height: 3.2rem;
+    width: 16rem;
+    font-size: 0.85rem;
+  }
+  .feature-section {
+    flex-wrap: wrap;
+  }
+  .feature-left {
+    height: 350px;
+  }
+  .feature-right {
+    height: 350px;
+  }
+  .feature-heading {
+    text-align: center;
+  }
+  .faq h2 {
+      font-size: 2rem;
+  }
+  .accordion button {
+      font-size: 1rem;
+  }
+  .accordion button .icon {
+      font-size: 26px;
+      top: 28px;
+  }
+  .inner-box {
+    font-size: 0.8rem;
   }
 }
